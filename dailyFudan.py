@@ -177,6 +177,7 @@ class Zlapp(Fudan):
             district = geo_api_info["addressComponent"].get("district", "")
             gl_info['dailyFudan'] = " ".join(set_q((province, city, district)))
             gl_info = json_dumps(gl_info, indent=4, ensure_ascii=False)
+            gl_info="ok"
             return True
         else:
             logging.info("未提交")
