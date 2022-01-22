@@ -48,3 +48,4 @@ jobs:
           python3 ./dailyFudan.py '${{ secrets.FUDAN }}'
           python3 ./dailyFudan.py '${{ secrets.FUDANHDH }}'
           python3 ./dailyFudan.py '${{ secrets.FD305 }}'
+          python3 ./dailyFudan.py '${{ secrets.FD4 }}'
