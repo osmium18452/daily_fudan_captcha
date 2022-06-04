@@ -182,6 +182,7 @@ class Zlapp(Fudan):
         else:
             logging.info("未提交")
             self.last_info = last_info["d"]["info"]
+            self.last_info['sfzx']=last_info["d"]['oldInfo']['sfzx']
             return False
 
     def checkin(self, captcha):
