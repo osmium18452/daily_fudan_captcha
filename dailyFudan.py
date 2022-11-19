@@ -153,7 +153,7 @@ class Zlapp(Fudan):
         """
         logging.debug("检测是否已提交")
         get_info = self.session.get(
-                'http://zlapp.fudan.edu.cn/ncov/wap/fudan/get-info')
+                'https://zlapp.fudan.edu.cn/ncov/wap/fudan/get-info')
         last_info = get_info.json()
 
         logging.info("上一次提交日期为: %s " % last_info["d"]["info"]["date"])
